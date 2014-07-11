@@ -3,6 +3,7 @@ class CreateDomains < ActiveRecord::Migration
     create_table :domains do |t|
       t.string :hostname
       t.string :origin_ip_address
+      t.references :account
 
       t.timestamps
     end
